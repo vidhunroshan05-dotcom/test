@@ -12,6 +12,9 @@ jobs:
 
       - name: Show permissions
         run: ls -l
+        
+      - name: Give permission
+        run: chmod +x test.sh
 
       - name: Run script
         run: ./test.sh
