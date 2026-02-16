@@ -1,6 +1,6 @@
-sudo yum update -y
-sudo yum install httpd -y
-sudo systemctl start httpd
-sudo systemctl enable httpd
+#!/usr/bin/env bash
 
-echo "<h1>Server 1</h1>" | sudo tee /var/www/html/index.html
+echo "Hello from GitHub Actions!"
+echo "Current branch: $GITHUB_REF"
+echo "Runner OS: $RUNNER_OS"
+date
